@@ -1,6 +1,6 @@
 def count_words(book_text):
     word_count = len(str.split(book_text))
-    return print(f"{word_count} words found in the document")
+    return print(f"Found {word_count} total words")
 
 def count_characters(book_text):
     lowered_text = str.lower(book_text)
@@ -23,4 +23,4 @@ def sort_dictionaries(letter_count):
         sorter["num"] = letter_count[character]
         sorted_dictionaries.append(sorter)
     sorted_dictionaries.sort(reverse=True, key=sort_key)
-    return print(sorted_dictionaries)
+    return sorted_dictionaries
